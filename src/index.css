@@ -1,0 +1,99 @@
+:root {
+  --bg-color-darkCyan: #008b8b;
+  --bg-color-white: white;
+  --border-solid-balck: 1px solid black;
+  --border-radius: 3%;
+  --border-radius-50Per: 50%;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  border: var(--border-solid-balck);
+  padding: 30px;
+}
+.profile {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.profile-container-left img {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--border-radius-50Per);
+    border: 3px solid red;
+}
+.profile-container-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-container-right hr {
+    width: 100%;
+    border: 1px solid var(--bg-color-darkCyan);
+}
+.profile-container-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.profile-container-right .inputSection {
+  display: flex;
+  flex-direction: column;
+}
+.connect-with-me-container {
+  display: flex;
+  flex-direction: column;
+}
+.connect-with-me-container div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75px;
+}
+.connect-with-me-container div a {
+    width: 150px;
+    border: var(--border-solid-balck);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shodow-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect-with-me-container a:hover {
+    background-color: var(--bg-color-darkCyan);
+}
+
+.connect-with-me-container a:hover i {
+    color: var(--bg-color-white);
+}
+.connect-with-me-container hr {
+    width: 100%;
+    border: 1px solid var(--bg-color-darkCyan);
+}
+.Contact-me-container {
+  display: flex;
+  flex-direction: column;
+}
+.Contact-me-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-me-container hr {
+    width: 100%;
+    border: 1px solid var(--bg-color-darkCyan);
+}
