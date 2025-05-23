@@ -1,6 +1,7 @@
-import Profile from "./Components/Sections/Profile/Profile";
-import ConnectMe from "./Components/Sections/ConnnectMe";
-import ContactMe from "./Components/Sections/ContactMe";
+import Profile from "./sections/Profile/Profile";
+import ConnectMe from "./sections/ConnnectMe";
+import ContactMe from "./sections/ContactMe";
+import './index.css'
 
 export default function App() {
   return (

@@ -42,15 +42,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+
 .profile-container-right hr {
     width: 100%;
     border: 1px solid var(--primary-color);
 }
-.profile-container-right {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-}
+
 .profile-container-right .inputSection {
   display: flex;
   flex-direction: column;
@@ -73,6 +71,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .connect-with-me-container a:hover {
     background-color: var(--primary-color);
 }
@@ -80,16 +79,13 @@ body {
 .connect-with-me-container a:hover i {
     color: var(--color-container-hover);
 }
-hr {
-    width: 100%;
-    border: 1px solid var(--primary-color);
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
 
 hr {
     width: 100%;
     border: 1px solid var(--primary-color);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
