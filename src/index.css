@@ -1,7 +1,7 @@
 :root {
-  --bg-color-darkCyan: #008b8b;
-  --bg-color-white: white;
-  --border-solid-balck: 1px solid black;
+  --primary-color: #008b8b;
+  --color-container-hover: white;
+  --border-color: 1px solid black;
   --border-radius: 3%;
   --border-radius-50Per: 50%;
 }
@@ -22,12 +22,12 @@ body {
   width: 70%;
   height: 100%;
   margin: 0 auto;
-  border: var(--border-solid-balck);
+  border: var(--border-color);
   padding: 30px;
 }
 .profile {
   display: flex;
-  width: 100%;
+  flex-grow: 1;
   gap: 10px;
 }
 .profile-container-left img {
@@ -44,7 +44,7 @@ body {
 }
 .profile-container-right hr {
     width: 100%;
-    border: 1px solid var(--bg-color-darkCyan);
+    border: 1px solid var(--primary-color);
 }
 .profile-container-right {
     flex: 2;
@@ -66,7 +66,7 @@ body {
 }
 .connect-with-me-container div a {
     width: 150px;
-    border: var(--border-solid-balck);
+    border: var(--border-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shodow-black);
     display: flex;
@@ -74,26 +74,22 @@ body {
     align-items: center;
 }
 .connect-with-me-container a:hover {
-    background-color: var(--bg-color-darkCyan);
+    background-color: var(--primary-color);
 }
 
 .connect-with-me-container a:hover i {
-    color: var(--bg-color-white);
+    color: var(--color-container-hover);
 }
-.connect-with-me-container hr {
+hr {
     width: 100%;
-    border: 1px solid var(--bg-color-darkCyan);
+    border: 1px solid var(--primary-color);
 }
-.Contact-me-container {
-  display: flex;
-  flex-direction: column;
-}
-.Contact-me-container form {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.Contact-me-container hr {
+hr {
     width: 100%;
-    border: 1px solid var(--bg-color-darkCyan);
+    border: 1px solid var(--primary-color);
 }
