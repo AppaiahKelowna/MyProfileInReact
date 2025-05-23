@@ -1,8 +1,9 @@
-export function FormFild({title, identifier, isRequired = false}) {
+
+export function FormFild({title, identifier, handleChange, isRequired = false}) {
     return(
     <div>
         <label htmlFor={identifier}>{title}</label>
-        <input id={identifier} required={isRequired} />
+        <input onChange={(e) => handleChange(e.target.value)}  id={identifier} required={isRequired} />
     </div>
     )
 }
