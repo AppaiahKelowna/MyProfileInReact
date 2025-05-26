@@ -1,11 +1,10 @@
 import LeftProfile from "./LeftSide";
 import RightSide from "./RightSide";
 
-export default function Profile() {
+export default function Profile(props) {
   return (
     <div className="profile">
-        <LeftProfile/>
-        <RightSide/>
+        {props.children}
     </div>
   )
 }
