@@ -8,8 +8,6 @@
 html {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 body {
   width: 100vw;
@@ -17,8 +15,6 @@ body {
   padding: 10px;
 }
 .root {
-  display: flex;
-  flex-direction: column;
   width: 70%;
   height: 100%;
   margin: 0 auto;
@@ -30,35 +26,24 @@ body {
   flex-grow: 1;
   gap: 10px;
 }
-.profile-container-left img {
+.profile-container.left img {
     width: 150px;
     height: 150px;
     border-radius: var(--border-radius-50Per);
     border: 3px solid red;
 }
-.profile-container-left {
+.profile-container.left {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
-.profile-container-right hr {
+.profile-container.right hr {
     width: 100%;
     border: 1px solid var(--primary-color);
 }
-.profile-container-right {
+.profile-container.right {
     flex: 2;
-    display: flex;
-    flex-direction: column;
 }
-.profile-container-right .inputSection {
-  display: flex;
-  flex-direction: column;
-}
-.connect-with-me-container {
-  display: flex;
-  flex-direction: column;
-}
+
 .connect-with-me-container div {
     display: flex;
     justify-content: space-evenly;

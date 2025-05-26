@@ -8,12 +8,11 @@ export default function App() {
   return (
     <>
       <Profile>
-        <LeftProfile/>
-        <RightSide/>
+        <LeftProfile />
+        <RightSide />
       </Profile>
-      <ConnectMe/>
-      <ContactMe/>
+      <ConnectMe />
+      <ContactMe />
     </>
-    
-  )
+  );
 }
