@@ -9,15 +9,28 @@ export default function ContactInformation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { name, email, message };
-    console.log(blog);
+
+    // form validation
+    if (!name || !email || !message) {
+      alert("please fill in all the field");
+      return;
+    }
 
     fetch("http://localhost:5173/?", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
-    }).then(() => {
-      console.log("New blog added");
-    });
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(response);
+        } else {
+          console.log("New blog added");
+        }
+      })
+      .catch((e) => {
+        console.Error("Failed to Add Blog", e);
+      });
   };
 
   return (
