@@ -1,5 +1,6 @@
 import { use } from "react";
 import { useState } from "react";
+import FormField from "./FormField";
 
 export default function ContactInformation() {
   const [name, setName] = useState("first name");
@@ -29,31 +30,30 @@ export default function ContactInformation() {
         }
       })
       .catch((e) => {
-        console.Error("Failed to Add Blog", e);
+        console.error("Failed to Add Blog", e);
       });
   };
 
   return (
     <form className="flex-column" onSubmit={handleSubmit}>
-      <label for="name">Name</label>
-      <input
+      <FormField
+        label="Name"
         id="name"
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
       />
-      <label for="email">Email</label>
-      <input
+      <FormField
+        label="Email"
         id="email"
-        type="email"
-        required
         value={email}
+        type="email"
         onChange={(e) => setEmail(e.target.value)}
+        required
       />
-      <label for="message">Message</label>
-      <input
+      <FormField
+        label="Message"
         id="message"
-        className="input-message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         required
