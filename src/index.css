@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #008b8b;
+  --color-container-hover: white;
+  --border-color: 1px solid black;
+  --border-radius: 3%;
+  --border-radius-50Per: 50%;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+.root {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  border: var(--border-color);
+  padding: 30px;
+}
+.profile {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+}
+.profile-container.left img {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--border-radius-50Per);
+    border: 3px solid red;
+}
+.profile-container.left {
+    flex: 1;
+    align-items: center;
+}
+.profile-container.right hr {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
+.profile-container.right {
+    flex: 2;
+}
+
+.connect-with-me-container div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75px;
+}
+.connect-with-me-container div a {
+    width: 150px;
+    border: var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shodow-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect-with-me-container a:hover {
+    background-color: var(--primary-color);
+}
+
+.connect-with-me-container a:hover i {
+    color: var(--color-container-hover);
+}
+hr {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
