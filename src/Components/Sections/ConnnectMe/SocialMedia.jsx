@@ -1,11 +1,11 @@
-export default function SocialMedia() {
+export default function SocialMedia({ list }) {
+  const mediaList = list.map((ele, index) => {
     return (
-        <>
-            <a><i className="fab fa-github"></i></a>
-            <a><i className="fab fa-linkedin"></i></a>
-            <a><i className="fab fa-twitter"></i></a>
-            <a><i className="fab fa-instagram"></i></a>
-            <a><i className="fab fa-youtube"></i></a>
-        </>
-    )
+      <a key={index}>
+        <i className={ele}></i>
+      </a>
+    );
+  });
+
+  return <>{mediaList}</>;
 }
